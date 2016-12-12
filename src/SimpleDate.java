@@ -9,7 +9,7 @@ public class SimpleDate {
 	    SimpleDateFormat sdf = new SimpleDateFormat(strDateFormat);
 	    System.out.println(sdf.format(date));
 /*	Test1 2 3 4*/
-/*	Test 5 6 7*/
+/*	Test 5 6 7 8*/
 
 	   }
 	}
