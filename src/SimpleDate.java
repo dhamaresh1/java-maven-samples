@@ -8,6 +8,8 @@ public class SimpleDate {
 	    String strDateFormat = "HH:mm:ss a";
 	    SimpleDateFormat sdf = new SimpleDateFormat(strDateFormat);
 	    System.out.println(sdf.format(date));
-/*	Test1 2 3*/	
+/*	Test1 2 3 4*/
+/*	Test 5 */
+
 	   }
 	}
