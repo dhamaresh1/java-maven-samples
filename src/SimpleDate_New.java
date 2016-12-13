@@ -1,8 +1,7 @@
-
 import java.text.SimpleDateFormat;
 import java.util.Date;
 
-public class SimpleDate {
+public class SimpleDate_New {
 	 public static void main(String[] args){
 	    Date date = new Date();
 	    String strDateFormat = "HH:mm:ss a";
@@ -10,7 +9,7 @@ public class SimpleDate {
 	    System.out.println(sdf.format(date));
 /*	Test1 2 3 4*/
 /*	Test 5 6 7 8*/
-/*	Test Change log 1 2 3 added along side new file*/
+/*	Test Change log 1 2 */
 
 	   }
 	}
