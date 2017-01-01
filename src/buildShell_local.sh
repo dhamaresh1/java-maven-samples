@@ -1,28 +1,27 @@
 #!/bin/bash
 # SCRIPT:  method1.sh
 # PURPOSE: Process a file line by line with PIPED while-read loop.
-FILENAME=$1
-count=0
+#FILENAME=$1
 cat git_Changelog_local.txt | while read Commits
 do
-#echo  ${FirstLine:16:40} ${FirstLine:61:40}
-#echo "$FirstLine"
-cmt1=${Commits:16:40}
-cmt2=${Commits:61:40}
-#mkdir ./$cmt2
-git show --pretty="format:" --name-only $cmt1 " " $cmt2 | sort | uniq > Commits.text
+  echo cmt1=${Commits:16:40}
+  echo cmt2=${Commits:61:40}
+  git show --pretty="format:" --name-only $cmt1 $cmt2 | sort | uniq > Commits1.txt
+  mkdir -p ./${Commits:61:40}
+    cat Commits1.txt | while read LINE
+    do
+      echo "$count" "$LINE"
+    done
+  cd ${Commits:61:40}
+
 done
 
 #count=0
-#cat Commits.txt | while read LINE
+#cd ./${Commits:61:40}
+#ls
+#cat Commits1 | while read LINE
 #do
 #let count++
-#cd ./$cmt2
 #echo "$count" "$LINE"
 #done
 #echo -e "\nTotal $count Lines read"
-
-#echo  ${FirstLine:16:40} ${FirstLine:61:40}
-#echo "$FirstLine"
-#git show --pretty="format:" --name-only ${FirstLine:16:40} ${FirstLine:61:40} | sort | uniq > Commits.text
-#done
