@@ -1,2 +1,36 @@
-Users/mac/vagrant-jenkins-CI/fstrigger-code/java-maven-samples/src/Commit_History
+# Intermediate Commit Files #
+###################
+src/Commit_History/*
 src/zzbuildShell_Local_Backup.sh
+
+# Compiled source #
+###################
+*.com
+*.class
+*.dll
+*.exe
+*.o
+*.so
+# Packages #
+############
+# git has its own built in compression methods
+*.7z
+*.dmg
+*.gz
+*.iso
+*.jar
+*.rar
+*.tar
+*.zip
+# Logs and databases #
+######################
+*.log
+*.sql
+*.sqlite
+# OS generated files #
+######################
+.DS_Store
+.DS_Store?
+._*
+.Spotlight-V100
+.Trashes
