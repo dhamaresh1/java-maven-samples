@@ -12,8 +12,8 @@ do
   mkdir -p ./Commit_History/"$cmt2"/Files_Deleted
 
   cd ../
-  git diff --name-status "$cmt1" "$cmt2" | sort | uniq > ./src/Commit_History/"$cmt2"/Commits1.txt
-  cat ./src/Commit_History/"$cmt2"/Commits1.txt | while read LINE
+  git diff --name-status "$cmt1" "$cmt2" | sort | uniq > ./src/Commit_History/"$cmt2"/all_Mods.txt
+  cat ./src/Commit_History/"$cmt2"/all_Mods.txt | while read LINE
       do
         fileMode="$( cut -c 1 <<< "$LINE" )"
         filePath="$( cut -d '/' -f 1 <<< "${LINE:2:49}" )"
