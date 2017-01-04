@@ -1,7 +1,7 @@
 #!/bin/bash
-rm -rf commitfile
-temp_commits=$(mktemp commitfile)
-head -1 git_Changelog_local.txt > $temp_commits
+#rm -rf commitfile
+#temp_commits=$(mktemp commitfile)
+head -1 git_Changelog_local.txt > temp_commits
 
 cat $temp_commits | while read Commits
 do
@@ -37,4 +37,4 @@ do
     done
 done
 
-rm -rf ${temp_commits}
+#rm -rf ${temp_commits}
